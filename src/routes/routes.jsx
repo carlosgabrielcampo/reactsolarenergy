@@ -10,7 +10,7 @@ import Error from "../pages/error/Error";
 
 export default function AppRotas() {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <MenuLateral>
           <Routes>
             <Route path="/" element={<LoginPage />} />
