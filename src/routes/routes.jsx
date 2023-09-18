@@ -10,9 +10,8 @@ import Error from "../pages/error/Error";
 
 export default function AppRotas() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <MenuLateral>
-        <HashRouter basename="/">
           <Routes>
             <Route path="/" element={<LoginPage />} />
             <Route path="dashboard" element={<Dashboard />} />
@@ -21,8 +20,7 @@ export default function AppRotas() {
 
             <Route path="*" element={<Error />} />
           </Routes>
-        </HashRouter>
       </MenuLateral>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
